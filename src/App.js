@@ -29,7 +29,7 @@ class App extends React.Component {
         <div className="app">
             <div className="card">
             <h1>{ advice }</h1>
-            <button onClick={this.fetchAdvice}> Give Me Advice!</button>
+            <button onClick={this.fetchAdvice} className="custom-btn btn"> Give Me Advice!</button>
             </div>
         </div>
     );

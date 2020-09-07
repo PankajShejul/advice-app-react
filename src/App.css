@@ -7,7 +7,8 @@
 
 .app {
     height:100%;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./image/city-1.jpg');
+    /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./image/city-1.jpg'); */
+    background-color: #bcdee7;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -26,7 +27,7 @@
     flex-direction: column;
     border-radius: 25px;
     padding: 2%;
-    box-shadow: 10px 10px;
+    box-shadow: 4px 4px #666666;
 }
 
 .heading {
@@ -35,3 +36,99 @@
     justify-content: center;
     font-family: 'Raleway', sans-serif;
 }
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      inset -7px -7px 10px 0px rgba(0,0,0,.1),7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    text-shadow:  2px 2px 3px rgba(255,255,255,.5),
+                -4px -4px 6px rgba(116, 125, 136, .2);
+    outline: none;
+  }
+
+.btn {
+    background: #ffbf7f;
+      line-height: 42px;
+      color: darkorange;
+      padding: 0;
+      border: none;
+    }
+    .btn span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn:before,
+    .btn:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn:hover{
+      color: rgba(251,75,2,1);
+      background: transparent;
+    }
+    .btn:hover:before {
+      height: 100%;
+    }
+    .btn:hover:after {
+      width: 100%;
+    }
+    .btn span:before,
+    .btn span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn span:hover:before {
+      height: 100%;
+    }
+    .btn span:hover:after {
+      width: 100%;
+    }
